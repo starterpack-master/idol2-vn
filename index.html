@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0712" />
+  <title>방과후 위험물</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" />
+  <script type="module" crossorigin src="./assets/index-BL6q0dF1.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-COstg74w.css">
+</head>
+<body>
+  <div id="app">
+    <div id="stage"></div>
+
+    <!-- 탐색 힌트 -->
+    <div id="hint" class="hidden"></div>
+
+    <!-- 상단 메뉴 -->
+    <div id="topbar" class="hidden">
+      <button data-act="log">LOG</button>
+      <button data-act="auto">AUTO</button>
+      <button data-act="skip">SKIP</button>
+      <button data-act="save">SAVE</button>
+      <button data-act="load">LOAD</button>
+      <button data-act="status">♥</button>
+      <button data-act="mute">♪</button>
+    </div>
+
+    <!-- 대사창 -->
+    <div id="textbox" class="hidden">
+      <div id="nameplate" class="hidden"></div>
+      <div id="text"></div>
+      <div id="next-ind">▼</div>
+    </div>
+
+    <div id="choices" class="hidden"></div>
+    <div id="toasts"></div>
+
+    <!-- 폰 오버레이 -->
+    <div id="phone" class="hidden">
+      <div class="phone-body">
+        <div class="phone-notch"></div>
+        <div class="phone-header"><span id="phone-title"></span></div>
+        <div id="phone-content"></div>
+        <div class="phone-tap">화면을 탭해서 닫기</div>
+      </div>
+    </div>
+
+    <div id="chapter" class="hidden"><div class="ch-title"></div><div class="ch-sub"></div></div>
+    <div id="fade"></div>
+    <div id="flash"></div>
+
+    <!-- 패널 -->
+    <div id="panel" class="hidden"><div class="panel-inner"><div id="panel-content"></div><button id="panel-close">닫기</button></div></div>
+
+    <!-- 타이틀 -->
+    <div id="title">
+      <div class="title-inner">
+        <div class="logo-sub">放課後危険物</div>
+        <h1>방과후<br/><span>위험물</span></h1>
+        <div class="logo-tag">학교에선 찐따, 방과후엔 프로듀서.</div>
+        <label class="pname">주인공 이름 <input id="player-name" maxlength="6" value="도윤" /></label>
+        <button id="btn-new">새로 시작</button>
+        <button id="btn-continue">이어하기</button>
+        <button id="btn-chapters">챕터 선택</button>
+        <div class="title-note">🎧 이어폰 권장 · 화면을 드래그하면 둘러볼 수 있어요</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
